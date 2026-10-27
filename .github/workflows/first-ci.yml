@@ -1,0 +1,19 @@
+name: My First CI Pipeline
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Welcome Message
+        run: echo "My first CI pipeline is working!"
+
+      - name: Check Date
+        run: date
+
+      - name: Check Current Directory
+        run: pwd
